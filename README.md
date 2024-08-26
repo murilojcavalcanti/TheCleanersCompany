@@ -130,19 +130,37 @@ São requisitos obrigatórios do projeto:
 
 * A entrega de
 
-  *   
+  * Landing page com login
+  * Uma página de informações sobre os serviços oferecidos no site com acesso a outras páginas
+  * Uma página de registro de dados que contenha:
+    * Nome
+    * E-mail
+    * Telefone
+    * CEP
+    * Frequencia
+    * Serviço oferecido
+    * Método de pagamento
+    * Necessidade de materiais
+     
+  * Uma página de exibição de ofertas que contenha:
+    * O nome da empresa registrada
+    * Valor por hora
+    * Especificação do serviço oferecido
+    * Informações de contato
 
-
-* Está fora do escopo:
   
+* Está fora do escopo:
+
+  * Página de área de pagamento, o site não oferece opção de pagamentos
+
 
 ### Linha do tempo/entregas
 
-* Entrega em 09/09/2024.
+* Entrega total do MVP em 09/09/2024.
 
 ### Link de visualização do protótipo funcional do site
 
-
+(https://www.figma.com/proto/aRZREJ1UDHbgT5gNoqGAFP/the-cleaners-company-site?page-id=0%3A1&node-id=413-39&viewport=101%2C1373%2C0.78&t=Pwe5d101sHHLKiME-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=199%3A192)
 
 # Vídeo do funcionamento do site
 
