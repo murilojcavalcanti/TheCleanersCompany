@@ -91,15 +91,37 @@ Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem s
 
 ### Recursos necessários
 
-* Registro e domínio e hospedagem
-* SEO
+* Registro de domínio e hospedagem
+* SEOs
 * Atualizações regulares e suporte técnico
 * Monitoramento de desempenho
 * Conformidade com a LGPD
-* 
 
+  
 ### KPIs
 
+* Marketing:
+  
+  * Taxa de conversão de visitantes
+  * Taxa de retorno de visitantes
+  * Taxa de cliques por anúncio
+
+* Operações:
+  
+  * Taxa de conclusão de serviços
+  * Tempo médio de resposta
+ 
+* Satisfação e retenção:
+
+  *  Taxa de retenção de clientes
+  *  Índice de satisfação do cliente
+
+* Qualidade e melhora contínua
+
+  * Índice de qualidade do serviço
+  * Número de reclamações
+  * Tempo de resolução de problemas
+  * Taxa de implementação de melhorias
 
 
 ### Escopo do projeto 
@@ -107,6 +129,7 @@ Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem s
 São requisitos obrigatórios do projeto:
 
 * A entrega de
+
   *   
 
 
