@@ -2,7 +2,7 @@
 
 ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Senac_logo.svg/653px-Senac_logo.svg.png)
 
-# PI -  ANÁLISE_DE_SOLUÇÕES INTEGRADAS_PARA_ORGANIZAÇÕES
+# PI -  ANÁLISE_DE_SOLUÇÕES INTEGRADAS
 # Integrantes
 <table>
 <thead>
@@ -52,7 +52,7 @@ Perfil
 
 
 
-<h1>PREPARAÇÃO</h1>
+<h1> PREPARAÇÃO </h1>
 
 ## Para a realização deste projeto e desenvolvimento do MVP as seguintes tecnologias foram utilizadas:
 
@@ -91,7 +91,12 @@ Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem s
 
 ### Recursos necessários
 
-
+* Registro e domínio e hospedagem
+* SEO
+* Atualizações regulares e suporte técnico
+* Monitoramento de desempenho
+* Conformidade com a LGPD
+* 
 
 ### KPIs
 
@@ -99,9 +104,10 @@ Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem s
 
 ### Escopo do projeto 
 
-São requisitos obrigatórios do projeto
+São requisitos obrigatórios do projeto:
 
-* A entrega de:
+* A entrega de
+  *   
 
 
 * Está fora do escopo:
