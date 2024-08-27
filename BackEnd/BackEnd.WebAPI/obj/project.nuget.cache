@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H3Os5YdDc5x5PMeRqXDRz9x++Vpt1HuLs9VppfpFiOnwse3X2V+1XehBRAYpftwj3I9LFmwkX2ETSSGp73jfPw==",
+  "dgSpecHash": "AicIru6jr+wGBQdKSTqzNrjZ2hPgCMKavhRw0KIZegL9CkTd9QFJnl3D9PDURNZpLD04cYwQzD49djnf5qcPnw==",
   "success": true,
-  "projectFilePath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.WebAPI\\BackEnd.Presentation.csproj",
+  "projectFilePath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.WebAPI\\BackEnd.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murilo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Murilo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

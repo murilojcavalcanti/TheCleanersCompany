@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.Domain", "BackEnd.Domain\BackEnd.Domain.csproj", "{66D5597F-7E7E-4BA0-80AA-20E2DF8E99E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd.Domain", "BackEnd.Domain\BackEnd.Domain.csproj", "{66D5597F-7E7E-4BA0-80AA-20E2DF8E99E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.Application", "BackEnd.Infra\BackEnd.Application.csproj", "{4A4CD0A9-552B-455F-9871-4FD3211CE3B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd.Application", "BackEnd.Infra\BackEnd.Application.csproj", "{4A4CD0A9-552B-455F-9871-4FD3211CE3B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.Infrastructure", "BackEnd.Persistence\BackEnd.Infrastructure.csproj", "{2C410EFB-6E60-4B19-A274-F00769B7DD08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd.Infrastructure", "BackEnd.Persistence\BackEnd.Infrastructure.csproj", "{2C410EFB-6E60-4B19-A274-F00769B7DD08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.Presentation", "BackEnd.WebAPI\BackEnd.Presentation.csproj", "{BBB82888-2318-4CC3-8225-5ED61F03A616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd.Presentation", "BackEnd.WebAPI\BackEnd.Presentation.csproj", "{BBB82888-2318-4CC3-8225-5ED61F03A616}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{87E3A067-F32E-48EB-8373-A3BC0E242E97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66D5597F-7E7E-4BA0-80AA-20E2DF8E99E3} = {87E3A067-F32E-48EB-8373-A3BC0E242E97}
+		{4A4CD0A9-552B-455F-9871-4FD3211CE3B2} = {87E3A067-F32E-48EB-8373-A3BC0E242E97}
+		{2C410EFB-6E60-4B19-A274-F00769B7DD08} = {87E3A067-F32E-48EB-8373-A3BC0E242E97}
+		{BBB82888-2318-4CC3-8225-5ED61F03A616} = {87E3A067-F32E-48EB-8373-A3BC0E242E97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12887977-8966-43EB-936E-4DF00CECB68F}

@@ -485,11 +485,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.WebAPI\\BackEnd.Presentation.csproj",
+      "projectUniqueName": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.WebAPI\\BackEnd.Presentation.csproj",
       "projectName": "BackEnd.Presentation",
-      "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.WebAPI\\BackEnd.Presentation.csproj",
+      "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.WebAPI\\BackEnd.Presentation.csproj",
       "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-      "outputPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.WebAPI\\obj\\",
+      "outputPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -511,14 +511,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj": {
-              "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj"
+            "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj": {
+              "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj"
             },
-            "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Infra\\BackEnd.Application.csproj": {
-              "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Infra\\BackEnd.Application.csproj"
+            "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Infra\\BackEnd.Application.csproj": {
+              "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Infra\\BackEnd.Application.csproj"
             },
-            "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Persistence\\BackEnd.Infrastructure.csproj": {
-              "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Persistence\\BackEnd.Infrastructure.csproj"
+            "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Persistence\\BackEnd.Infrastructure.csproj": {
+              "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Persistence\\BackEnd.Infrastructure.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj": {}
+    "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj": {
+    "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj",
+        "projectUniqueName": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj",
         "projectName": "BackEnd.Domain",
-        "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj",
+        "projectPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\BackEnd.Domain.csproj",
         "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-        "outputPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\PROJETO_INTEGRADOR\\BackEnd\\BackEnd.Domain\\obj\\",
+        "outputPath": "D:\\Analise e Desensolvimento de sistemas\\05-QuintoPeriodo\\Projeto integrador\\TheCleanersCompany\\BackEnd\\BackEnd.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
