@@ -48,9 +48,7 @@ Perfil
   <a/></td>
 </tr>
 </TBODY>
-
-
-
+<table/>
 
 <h1> PREPARAÇÃO </h1>
 
