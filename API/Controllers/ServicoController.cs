@@ -32,7 +32,7 @@ namespace API.Controllers
             }
         }
 
-        [HttpGet("{id:int:min(1)}")]
+        [HttpGet("{id:int:min(1)}",Name = "BuscaServicoPorId")]
         public async Task<ActionResult<Servico>> BuscaServicoPorId(int id)
         {
             try
@@ -57,7 +57,7 @@ namespace API.Controllers
                 }
                 Context.Servicos.Add(servico);
                 Context.SaveChanges();
-                return new CreatedAtRouteResult("BuscaServicoPorId",new { id = servico.Id}, servico);
+                return new CreatedAtRouteResult("BuscaServicoPorId", new {id = servico.Id}, servico);
             }
             catch (Exception)
             {
