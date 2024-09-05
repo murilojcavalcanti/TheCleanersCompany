@@ -2,7 +2,7 @@
 
 ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Senac_logo.svg/653px-Senac_logo.svg.png)
 
-# PI -  ANÁLISE_DE_SOLUÇÕES INTEGRADAS
+# PI -  ANÁLISE_DE_SOLUÇÕES_INTEGRADAS_PARA_ORGANIZAÇÕES
 # Integrantes
 <table>
 <thead>
@@ -48,9 +48,7 @@ Perfil
   <a/></td>
 </tr>
 </TBODY>
-
-
-
+<table/>
 
 <h1> PREPARAÇÃO </h1>
 
