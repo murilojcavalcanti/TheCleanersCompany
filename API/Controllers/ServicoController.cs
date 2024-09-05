@@ -82,12 +82,12 @@ namespace API.Controllers
         }
 
         [HttpDelete("{id:int:min(1)}")]
-        public ActionResult Delete(int id)
+        public ActionResult DeletaServico(int id)
         {
             try
             {
                 var servico = Context.Servicos.FirstOrDefault(s => s.Id == id);
-                if (servico is null) return BadRequest($"Produto com id -> {id} não foi encontrado");
+                if (servico is null) return BadRequest($"Serviço com id -> {id} não foi encontrado");
                 Context.Servicos.Remove(servico);
                 Context.SaveChanges();
                 return Ok(servico);

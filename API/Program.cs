@@ -1,6 +1,7 @@
-using API.Data;
+﻿using API.Data;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using API.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 

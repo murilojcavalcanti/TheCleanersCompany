@@ -8,6 +8,7 @@ namespace API.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> Opts):base(Opts) {}
         public DbSet<Servico> Servicos { get; set; }
+        public DbSet<API.Data.Entities.Categoria> Categoria { get; set; } = default!;
 
     }
 }
