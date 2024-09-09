@@ -9,5 +9,8 @@ namespace API.Data.Entities
 
         [Required]
         public string Nome { get; set; }
+
+        public int CategoriaId { get; set; }
+        public virtual Categoria Categoria { get; set;}
     }
 }

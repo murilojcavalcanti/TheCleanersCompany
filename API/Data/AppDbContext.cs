@@ -14,7 +14,8 @@ namespace API.Data
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //Criação de relacionamento nas classes profile
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
@@ -38,6 +39,6 @@ namespace API.Data
                 .WithMany(u => u.Categorias)
                 .HasForeignKey(c => c.UserId)
                 .OnDelete(DeleteBehavior.Cascade); // Exclusão em cascata
-        }
+        }*/
     }
 }

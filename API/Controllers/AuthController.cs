@@ -4,6 +4,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Configuration;
+using API.Data;
+using API.Data.Entities;
+using Org.BouncyCastle.Crypto.Generators;
 
 [Route("api/[controller]")]
 [ApiController]

@@ -8,7 +8,9 @@ namespace API.Data.Entities
         public int Id { get; set; }
 
         [Required]
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
+        public int? ServicoId { get; set; }
+        public ICollection<Servico>? Servicos { get; set; }
 
     }
 }
