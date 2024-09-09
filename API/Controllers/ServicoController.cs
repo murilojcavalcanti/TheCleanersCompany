@@ -2,6 +2,7 @@
 using API.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace API.Controllers
 {
@@ -11,10 +12,12 @@ namespace API.Controllers
     public class ServicoController : Controller
     {
         private AppDbContext Context;
+        private readonly IMapper _mapper;
 
-        public ServicoController(AppDbContext context)
+        public ServicoController(AppDbContext context, IMapper mapper)
         {
             Context = context;
+            _mapper = mapper;
         }
 
 
@@ -25,7 +28,8 @@ namespace API.Controllers
             try
             {
                 Servicos = await Context.Servicos.AsNoTracking().ToListAsync();
-                return Servicos;
+                var servicosDto = _mapper.Map<IEnumerable<ServicoDto>>(servicos);
+                return Ok(servicosDto);
             }catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao tratar a sua solicitação");
@@ -37,27 +41,30 @@ namespace API.Controllers
         {
             try
             {
-                Servico servico = await Context.Servicos.AsNoTracking().FirstOrDefaultAsync(s => s.Id == id);
-                return servico;
+                var servico = await Context.Servicos.AsNoTracking().FirstOrDefaultAsync(s => s.Id == id);
+                if (servico == null) return NotFound();
+                var servicoDto = _mapper.Map<ServicoDto>(servico);
+                return Ok(servicoDto);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao tratar a sua solicitação");
             }
         }
 
         [HttpPost]
-        public ActionResult CriaServico(Servico servico)
+        public async Task<ActionResult<ServicoDto>> CriaServico(ServicoDto servicoDto)
         {
             try
             {
-                if(servico is null)
-                {
-                    return BadRequest("Dados invalidos");
-                }
+                if (servicoDto == null) return BadRequest("Dados inválidos");
+
+                var servico = _mapper.Map<Servico>(servicoDto);
                 Context.Servicos.Add(servico);
-                Context.SaveChanges();
-                return new CreatedAtRouteResult("BuscaServicoPorId", new {id = servico.Id}, servico);
+                await Context.SaveChangesAsync();
+
+                var novoServicoDto = _mapper.Map<ServicoDto>(servico);
+                return CreatedAtRoute("BuscaServicoPorId", new { id = servico.Id }, novoServicoDto);
             }
             catch (Exception)
             {
@@ -66,37 +73,39 @@ namespace API.Controllers
         }
 
         [HttpPut("{id:int:min(1)}")]
-        public ActionResult Atualizaservico(int id,Servico servico)
+        public async Task<ActionResult> AtualizaServico(int id, ServicoDto servicoDto)
         {
             try
             {
-                if (id != servico.Id) return BadRequest("Dados Inválidos");
-                Context.Entry(servico).State= EntityState.Modified;
-                Context.SaveChanges();
-                return Ok();
+                if (id != servicoDto.Id) return BadRequest("Dados inválidos");
+
+                var servico = _mapper.Map<Servico>(servicoDto);
+                Context.Entry(servico).State = EntityState.Modified;
+                await Context.SaveChangesAsync();
+                return NoContent();
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao tratar a sua solicitação");
             }
         }
-
+        
         [HttpDelete("{id:int:min(1)}")]
-        public ActionResult DeletaServico(int id)
+        public async Task<ActionResult> DeletaServico(int id)
         {
             try
             {
-                var servico = Context.Servicos.FirstOrDefault(s => s.Id == id);
-                if (servico is null) return BadRequest($"Serviço com id -> {id} não foi encontrado");
+                var servico = await Context.Servicos.FirstOrDefaultAsync(s => s.Id == id);
+                if (servico == null) return NotFound($"Serviço com id -> {id} não foi encontrado");
+
                 Context.Servicos.Remove(servico);
-                Context.SaveChanges();
-                return Ok(servico);
+                await Context.SaveChangesAsync();
+                return NoContent();
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao tratar a sua Solicitação");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao tratar a sua solicitação");
             }
-        }
 
     }
 }

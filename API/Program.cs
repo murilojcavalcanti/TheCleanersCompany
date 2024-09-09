@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using API.Controllers;
+using AutoMapper; 
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,32 +1,41 @@
-using API.Data;
-using API.Data.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using API.Data;
+using API.Data.Entities;
+using AutoMapper;
 
 namespace API.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
-    public class UserController : Controller
+    public class UserController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext Context;
+        private readonly IMapper _mapper;
 
-        public UserController(AppDbContext context)
+        public UserController(AppDbContext context, IMapper mapper)
         {
-            _context = context;
+            Context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
         {
             try
             {
-                var users = await _context.Users
-                    .Include(u => u.Categorias)
-                    .Include(u => u.Servicos)
+                var users = await Context.Users
+                
                     .AsNoTracking()
                     .ToListAsync();
-                return Ok(users);
+
+                var userDtos = _mapper.Map<List<UserDto>>(users);
+                return Ok(userDtos);
             }
             catch (Exception)
             {
@@ -35,20 +44,20 @@ namespace API.Controllers
         }
 
         [HttpGet("{id:int:min(1)}", Name = "GetUserById")]
-        public async Task<ActionResult<User>> GetUserById(int id)
+        public async Task<ActionResult<UserDto>> GetUserById(int id)
         {
             try
             {
-                var user = await _context.Users
-                    .Include(u => u.Categorias)
-                    .Include(u => u.Servicos)
+                var user = await Context.Users
+
                     .AsNoTracking()
                     .FirstOrDefaultAsync(u => u.Id == id);
 
                 if (user == null)
                     return NotFound($"Usuário com id {id} não encontrado.");
 
-                return Ok(user);
+                var userDto = _mapper.Map<UserDto>(user);
+                return Ok(userDto);
             }
             catch (Exception)
             {
@@ -57,19 +66,23 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateUser(User user)
+        public async Task<ActionResult<UserDto>> CreateUser(UserDto userDto)
         {
             try
             {
-                if (user == null)
+                if (userDto == null)
                 {
                     return BadRequest("Dados inválidos.");
                 }
 
-                _context.Users.Add(user);
-                await _context.SaveChangesAsync();
+                var user = _mapper.Map<User>(userDto);
+                user.SenhaHash = BCrypt.Net.BCrypt.HashPassword(userDto.Senha);  // Hash a senha
 
-                return new CreatedAtRouteResult("GetUserById", new { id = user.Id }, user);
+                Context.Users.Add(user);
+                await Context.SaveChangesAsync();
+
+                var createdUserDto = _mapper.Map<UserDto>(user);
+                return CreatedAtRoute("GetUserById", new { id = user.Id }, createdUserDto);
             }
             catch (Exception)
             {
@@ -78,17 +91,23 @@ namespace API.Controllers
         }
 
         [HttpPut("{id:int:min(1)}")]
-        public async Task<ActionResult> UpdateUser(int id, User user)
+        public async Task<ActionResult> UpdateUser(int id, UserDto userDto)
         {
             try
             {
-                if (id != user.Id)
+                if (id != userDto.Id)
                     return BadRequest("Dados inválidos.");
 
-                _context.Entry(user).State = EntityState.Modified;
-                await _context.SaveChangesAsync();
+                var user = await Context.Users.FindAsync(id);
+                if (user == null)
+                    return NotFound($"Usuário com id {id} não encontrado.");
 
-                return Ok(user);
+                _mapper.Map(userDto, user);  // Atualize as propriedades do usuário existente
+
+                Context.Entry(user).State = EntityState.Modified;
+                await Context.SaveChangesAsync();
+
+                return Ok(userDto);
             }
             catch (Exception)
             {
@@ -101,22 +120,18 @@ namespace API.Controllers
         {
             try
             {
-                var user = await _context.Users
-                    .Include(u => u.Categorias)
-                    .Include(u => u.Servicos)
-                    .FirstOrDefaultAsync(u => u.Id == id);
+                var user = await Context.Users.FindAsync(id);
 
                 if (user == null)
                     return NotFound($"Usuário com id {id} não encontrado.");
 
-                // Remover categorias e serviços associados
-                _context.Categorias.RemoveRange(user.Categorias);
-                _context.Servicos.RemoveRange(user.Servicos);
-                _context.Users.Remove(user);
 
-                await _context.SaveChangesAsync();
+                Context.Users.Remove(user);
 
-                return Ok(user);
+                await Context.SaveChangesAsync();
+
+                var userDto = _mapper.Map<UserDto>(user);
+                return Ok(userDto);
             }
             catch (Exception)
             {
