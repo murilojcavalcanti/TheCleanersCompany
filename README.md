@@ -73,19 +73,19 @@ Perfil
 
 ## Prova de conceito e MVPs
 
-Nessa fase do projeto foram realizadas a prova de conceito do site e o desenvolvimento do MVP (Minimo Produto Viável).
+Nessa fase do projeto o grupo realizou a prova de conceito do site e o desenvolvimento do MVP (Minimo Produto Viável).
 
 ### Produto
 
-A solução escolhida foi a criação de um site (The Cleaners Company) para colocar clientes em contato com prestadores de serviços de limpeza comuns e específicos. O site oferece chance de exposição para os prestadores de serviço a novos clientes de sua região com nenhum custo adicionado.
+A solução escolhida foi a criação de um site (The Cleaners Company). A finalidade é colocar clientes em contato com prestadores de serviço da área de limpeza, podendo ser comuns ou específicos. O site oferece uma vitrine para que novos prestadores possam encontrar interessados e os mesmos consigam facilitar sua busca por um serviço confiável e justo.
 
 ### Problema
 
-Pequenas empresas que oferecem serviços serviços de limpeza que podem ser consideradas de nicho poder ter dificuldades para encontrar clientelas novas em regiões próximas e clientes que precisam de limpezas que fazem parte de nichos especificos podem ter dificuldades para encontrar o tipo de serviço necessário e confiável.
+Pequenas empresas com serviços nichados podem enfrentar dificuldades para encontrar mercado em regiões próximas.
 
-### Públicos alvo
+### Público-Alvo
 
-Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem ser considerados parte de um nicho e pessoas físicas e jurídicas que necessitam de serviços de limpeza variados.
+Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem ser beneficiados por uma ferramenta simplificada para busca de serviço e clientes interessados em contatá-los.
 
 ### Recursos necessários
 
