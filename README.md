@@ -140,10 +140,7 @@ São requisitos obrigatórios do projeto:
     * E-mail
     * Telefone
     * CEP
-    * Frequencia
     * Serviço oferecido
-    * Método de pagamento
-    * Necessidade de materiais
      
   * Uma página de exibição de ofertas que contenha:
     * O nome da empresa registrada
