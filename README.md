@@ -65,6 +65,7 @@ Perfil
 
 * C#
 * MySQL
+* .net
 
 ## Foram utilizadas também as seguintes ferramentas:
 
