@@ -141,6 +141,8 @@ São requisitos obrigatórios do projeto:
     * Telefone
     * CEP
     * Serviço oferecido
+    * Foto
+    * Data de nascimento
      
   * Uma página de exibição de ofertas que contenha:
     * O nome da empresa registrada
