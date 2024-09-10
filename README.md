@@ -147,6 +147,11 @@ São requisitos obrigatórios do projeto:
     * Valor por hora
     * Especificação do serviço oferecido
     * Informações de contato
+    * Uma página de pesquisa (Profissionais Cadastrados)
+    * Categoria de serviço
+    * Tipos de serviço
+    * UF
+    * Município
 
   
 * Está fora do escopo:
