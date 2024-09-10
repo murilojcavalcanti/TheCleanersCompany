@@ -162,7 +162,7 @@ São requisitos obrigatórios do projeto:
 
 # Vídeo do funcionamento do site
 
-Para acessar o vídeo no YouTube, acesse:
+Para acessar o vídeo no YouTube, acesse: https://youtu.be/TtQk1xQbWMQ
 
 
 
