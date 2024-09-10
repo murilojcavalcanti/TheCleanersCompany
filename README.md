@@ -55,6 +55,8 @@ Perfil
 ## Para a realização deste projeto e desenvolvimento do MVP as seguintes tecnologias foram utilizadas:
 
 ## Linguagens de front end
+* node.js
+* next.js
 * React
 * CSS
 * HTML
