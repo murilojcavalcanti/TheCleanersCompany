@@ -64,6 +64,7 @@ Perfil
 ### Tecnologias de back end
 
 * C#
+* MySQL
 
 ## Foram utilizadas também as seguintes ferramentas:
 
