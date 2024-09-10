@@ -63,7 +63,7 @@ Perfil
 
 ### Tecnologias de back end
 
-*
+* C#
 
 ## Foram utilizadas também as seguintes ferramentas:
 
@@ -83,11 +83,13 @@ A solução escolhida foi a criação de um site (The Cleaners Company). A final
 
 ### Problema
 
-Pequenas empresas com serviços nichados podem enfrentar dificuldades para encontrar mercado em regiões próximas.
+Pequenas e médias empresas e prestadores de serviço autônomos no ramo de limpeza especializada podem enfrentar dificuldades para encontrar novos mercados e/ou novos clientes nas regiões próximas de seus estabelecimentos comerciais ou de suas residências.
 
 ### Público-Alvo
 
-Empresas de pequeno e médio porte que oferecem serviços de limpeza que podem ser beneficiados por uma ferramenta simplificada para busca de serviço e clientes interessados em contatá-los.
+Empresas de pequeno e médio porte e prestadores de serviço autônomos que têm dificuldade para divulgar suas empresas e os serviços que oferecem nas diversas áreas de limpeza especializada.
+
+Clientes (pessoas físicas ou jurídicas) interessados em contratar profissionais especialistas na prestação de serviços de limpeza em diversas áreas e especialidades.
 
 ### Recursos necessários
 
