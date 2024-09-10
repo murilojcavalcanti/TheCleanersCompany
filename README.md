@@ -158,7 +158,7 @@ São requisitos obrigatórios do projeto:
 
 ### Link de visualização do protótipo funcional do site
 
-(https://www.figma.com/proto/aRZREJ1UDHbgT5gNoqGAFP/the-cleaners-company-site?page-id=0%3A1&node-id=413-39&viewport=101%2C1373%2C0.78&t=Pwe5d101sHHLKiME-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=199%3A192)
+(https://www.figma.com/proto/aRZREJ1UDHbgT5gNoqGAFP/the-cleaners-company-site?page-id=0%3A1&node-id=413-39&node-type=canvas&viewport=831%2C387%2C0.12&t=0YsFJzI1G5to9Ql7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=199%3A192))
 
 # Vídeo do funcionamento do site
 
